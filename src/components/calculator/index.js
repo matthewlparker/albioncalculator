@@ -42,7 +42,7 @@ class Calculator extends Component {
     if (sum) {
       return (this.state.cloth + this.state.leather) * num;
     } else {
-      return 0;
+      return null;
     }
   };
 
@@ -58,7 +58,9 @@ class Calculator extends Component {
             value={this.state.age}
             onChange={this.handleChange('cloth')}
             type="number"
+            min="1"
             className={classes.textField}
+            InputProps={{ inputProps: { min: 0 } }}
             InputLabelProps={{
               shrink: true
             }}
@@ -71,6 +73,7 @@ class Calculator extends Component {
             onChange={this.handleChange('leather')}
             type="number"
             className={classes.textField}
+            InputProps={{ inputProps: { min: 0 } }}
             InputLabelProps={{
               shrink: true
             }}
@@ -81,12 +84,12 @@ class Calculator extends Component {
         <div className="output">
           <div className="output-content">
             <div className="times-4">
-              <img src={bagImg} alt="bag icon" />
-              <div>Bag {this.calculate(8)}</div>
+              <img src={bagImg} alt="bag" />
+              <div>{this.calculate(8)}</div>
             </div>
             <div className="times-8">
-              <img src={capeImg} alt="cape icon" />
-              <div>Cape {this.calculate(4)}</div>
+              <img src={capeImg} alt="cape" />
+              <div>{this.calculate(4)}</div>
             </div>
           </div>
         </div>

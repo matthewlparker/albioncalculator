@@ -12,7 +12,7 @@ class App extends Component {
         <CssBaseline />
         <div className="App">
           <header className="App-header">
-            <h1 className="App-title">{`Ganoe's crafting caltulator`}</h1>
+            <h1 className="App-title">{`Ganoe's crafting calculator`}</h1>
           </header>
           <div className="main">
             <Calculator />
