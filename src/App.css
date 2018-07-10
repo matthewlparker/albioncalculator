@@ -1,0 +1,43 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('./assets/albion-stag-banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 3.5em;
+  margin-top: 100px;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.7);
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.main {
+  padding: 30px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
